@@ -24,8 +24,8 @@ module "log-analytics" {
 }
 
 module "sentinel" {
-  source      = "./.."
-  name        = "app"
-  environment = "test"
+  source                     = "./.."
+  name                       = "app"
+  environment                = "test"
   log_analytics_workspace_id = module.log-analytics.workspace_id
 }
