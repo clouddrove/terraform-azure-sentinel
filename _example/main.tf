@@ -13,7 +13,7 @@ module "resource_group" {
 }
 module "log-analytics" {
   source                           = "clouddrove/log-analytics/azure"
-  version                          = "1.0.1"
+  version                          = "1.1.0"
   name                             = "app"
   environment                      = "test"
   label_order                      = ["name", "environment"]
