@@ -1,6 +1,6 @@
 provider "azurerm" {
   features {}
-  subscription_id = "068245d4-3c94-42fe-9c4d-9e5e1cabc60c"
+  subscription_id = "000000-11111-1223-XXX-XXXXXXXXXXXX"
 }
 
 locals {
@@ -14,7 +14,7 @@ module "resource_group" {
   version     = "1.0.2"
   name        = local.name
   environment = local.environment
-  location    = "Canada Central"
+  location    = local.location
 }
 
 ##-----------------------------------------------------------------------------

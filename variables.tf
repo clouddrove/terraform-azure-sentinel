@@ -36,12 +36,6 @@ variable "enabled" {
   description = "Set to false to prevent the module from creating any resources."
 }
 
-variable "tags" {
-  type        = map(string)
-  default     = {}
-  description = "A map of tags to add to all resources"
-}
-
 variable "sentinel_enabled" {
   type        = bool
   default     = true
@@ -52,12 +46,6 @@ variable "log_analytics_workspace_id" {
   type        = string
   default     = ""
   description = "The ID of the Log Analytics Workspace this Sentinel MS Security Incident Alert Rule belongs to. Changing this forces a new Sentinel MS Security Incident Alert Rule to be created."
-}
-
-variable "sentinel_workspace_name" {
-  type        = string
-  default     = ""
-  description = "The name which should be used for this Sentinel MS Security Incident Alert Rule. Changing this forces a new Sentinel MS Security Incident Alert Rule to be created."
 }
 
 variable "product_filter" {
